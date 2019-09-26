@@ -33,10 +33,6 @@ app.post('/deploy', (request, response) => {
   response.status(200).send()
 });
 
-const listener = app.listen(process.env.PORT, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
-
 // http://expressjs.com/en/starter/basic-routing.html
 app.get('/randomHttpCode', function(request, response) {
   // Generate random number between 0 and 1
